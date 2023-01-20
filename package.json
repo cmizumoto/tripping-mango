@@ -1,0 +1,22 @@
+{
+  "name": "trippingmango",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmizumoto/tripping-mango.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmizumoto/tripping-mango/issues"
+  },
+  "homepage": "https://github.com/cmizumoto/tripping-mango#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
