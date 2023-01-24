@@ -3,3 +3,21 @@
   padding: 25rem 0;
   margin-top: -10vh;
 }
+
+.section-features {
+  padding: 25rem 0;
+  margin-top: -12rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1574&q=80");
+  background-size: cover;
+  background-position: center;
+
+  // We could use this skew transform, select the direct childs using > * selector and skew in another direction to compensate, but looking at the result, there a bit of a serrilated line in the element that is skewed, so i'm choosing the clip path again
+  // transform: skewY(-5deg);
+
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+}
