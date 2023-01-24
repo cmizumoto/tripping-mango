@@ -36,6 +36,15 @@
     }
   }
 
+  &--orange {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   /* after is treated like a child of the parent element */
   /* then we can use position absolute and relative in the same element */
   &::after {

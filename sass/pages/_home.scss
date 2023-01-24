@@ -1,7 +1,7 @@
 .section-about {
   background-color: $color-grey-light-1;
   padding: 25rem 0;
-  margin-top: -10vh;
+  margin-top: -15vh;
 }
 
 .section-features {
@@ -19,5 +19,12 @@
   // We could use this skew transform, select the direct childs using > * selector and skew in another direction to compensate, but looking at the result, there a bit of a serrilated line in the element that is skewed, so i'm choosing the clip path again
   // transform: skewY(-5deg);
 
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+}
+
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 15rem 0;
+  margin-top: -15vh;
 }
