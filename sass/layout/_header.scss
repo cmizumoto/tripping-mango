@@ -12,15 +12,20 @@
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   position: relative;
 
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  }
+
   &__logo-box {
     position: absolute;
-    top: 4rem;
+    top: 3rem;
     left: 4rem;
   }
 
   &__text-box {
     position: absolute;
-    top: 40%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
