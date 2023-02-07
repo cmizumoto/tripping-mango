@@ -12,6 +12,19 @@
   clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
   position: relative;
 
+  // we can add multiple breakpoints to change the image, apply the first condition or the second one
+  //@media(min-resolution: 192dpi) and (min-width: 600px),
+  // (min-width: 2000px)
+  // set the default to an small image and if the min-resolution is true, we load a bigger one
+  // @media(min-resolution: 192dpi) {
+  //   background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba($color-primary-light, 0.8),
+  //     rgba($color-primary-dark, 0.8)
+  //   ),
+  //   url("https://images.unsplash.com/photo-1454942901704-3c44c11b2ad1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  // }
+
   @include respond(phone) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);

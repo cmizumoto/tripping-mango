@@ -68,6 +68,18 @@
           </div>
           <div class="col-1-of-2">
             <div class="composition">
+              <!-- 
+                  Set the srcset to both or more images and its desired size
+                  the sizes are the break point that the changes will occour
+                  alt is alt, class is class
+                  src is the fallback in case the browser don't accept it
+                <img srcset="img/test-SMALL.jpg 300w, img/test-BIG.jpg 1000w"
+                  sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px"
+                  alt="Photo 1"
+                  class="composition__photo composition__photo--p1"
+                  src="img/test-BIG.jpg"
+                > -->
+
               <img
                 src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                 alt="lake cabin mountains"
@@ -356,6 +368,17 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
+        <!-- 
+          Declare the picture element
+          add source with srcset giving both images and it's sizes 1x and 2x
+          add media that corresponds to the breakpoint
+          add img with the correspond images set in source and src for fallback
+          <picture class="footer__logo">
+            <source srcset="img/test-SMALL.jpg 1x, img/test-BIG.jpg 2x"
+              media="(max-width: 37.5em)">
+              <img srcset="img/test-SMALL.jpg 1x, img/test-BIG.jpg 2x" alt="Logo" src="img/test-BIG.jpg">
+          </picture>
+         -->
         <img src="img/mango.svg" alt="Tripping Mango Logo" class="footer__logo" />
       </div>
       <div class="row">
