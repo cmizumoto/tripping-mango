@@ -23,8 +23,10 @@
   // We could use this skew transform, select the direct childs using > * selector and skew in another direction to compensate, but looking at the result, there a bit of a serrilated line in the element that is skewed, so i'm choosing the clip path again
   // transform: skewY(-5deg);
 
-  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  }
 
   @include respond(tablet-port) {
     padding: 10rem 0;
