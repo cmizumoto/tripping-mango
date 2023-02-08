@@ -17,11 +17,11 @@
   }
 
   // we can add multiple breakpoints to change the image, apply the first condition or the second one
-  //@media(min-resolution: 192dpi) and (min-width: 600px),
+  //@media only screen and (min-resolution: 192dpi) and (min-width: 600px),
   // (-webkit-mindevice-pixel-ratio: 2) and (min-width: 37.5em)
   // (min-width: 125em)
   // set the default to an small image and if the min-resolution is true, we load a bigger one
-  // @media(min-resolution: 192dpi) {
+  // @media only screen and (min-resolution: 192dpi) {
   //   background-image: linear-gradient(
   //     to right bottom,
   //     rgba($color-primary-light, 0.8),
